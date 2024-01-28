@@ -15,6 +15,7 @@ footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
+  font-weight: bold;
 }
 
 a {
@@ -50,7 +51,13 @@ main {
 }
 
 .weather-app {
-  background: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(107, 157, 171, 0.5) 23.8%,
+    rgb(92, 122, 158, 0.5) 66%
+  );
+
+  background-size: cover;
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
@@ -67,12 +74,12 @@ main {
 .weather-app-details {
   font-size: 16px;
   line-height: 24px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #252f30;
   font-weight: 500;
 }
 
 .weather-app-details strong {
-  color: #f65282;
+  color: white;
 }
 
 .weather-app-temperature-container {
@@ -103,7 +110,8 @@ main {
 
 .weather-forecast-date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: #252f30;
+  font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -118,7 +126,7 @@ main {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: white;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -126,4 +134,16 @@ main {
 
 .weather-forecast-temperature {
   padding: 0 10px;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
