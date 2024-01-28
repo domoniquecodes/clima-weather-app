@@ -67,7 +67,7 @@ function formatDay(timestamp) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Philadelphia");
+searchCity("Willow Grove");
 
 function getForecast(city) {
   let apiKey = "b78bba14cabt32e0f423fb4886foc395";
@@ -105,4 +105,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-searchCity("Philadelphia");
+searchCity("Willow Grove");
